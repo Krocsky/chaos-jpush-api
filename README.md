@@ -1,7 +1,7 @@
 # JPush API Golang
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/deaswang/jpush-api-golang)](https://goreportcard.com/report/github.com/deaswang/jpush-api-golang)
-[![Go](https://github.com/deaswang/jpush-api-golang/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/deaswang/jpush-api-golang/actions/workflows/go.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Krocsky/chaos-jpush-api)](https://goreportcard.com/report/github.com/Krocsky/chaos-jpush-api)
+[![Go](https://github.com/Krocsky/chaos-jpush-api/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/Krocsky/chaos-jpush-api/actions/workflows/go.yml)
 
 ## 概述
 
@@ -21,7 +21,7 @@ go get github.com/Krocsky/chaos-jpush-api
 
 ## 代码样例
 
-> 代码样例在 jpush-api-golang 中的 example 文件夹中，[点击查看所有 example ](https://github.com/deaswang/jpush-api-golang/tree/master/example) 。
+> 代码样例在 jpush-api-golang 中的 example 文件夹中，[点击查看所有 example ](https://github.com/Krocsky/chaos-jpush-api/tree/master/example) 。
 
 > 这个样例演示了消息推送。
 
@@ -65,7 +65,7 @@ Device API 状态码 参考文档：<http://docs.jiguang.cn/jpush/server/push/re
 
 Push Schedule API 状态码 参考文档：<http://docs.jiguang.cn/jpush/server/push/rest_api_push_schedule/>
 
-[Release 页面](https://github.com/deaswang/jpush-api-golang/releases) 有详细的版本发布记录与下载。
+[Release 页面](https://github.com/Krocsky/chaos-jpush-api/releases) 有详细的版本发布记录与下载。
 
 ## 根据之前作者的代码改写
 
