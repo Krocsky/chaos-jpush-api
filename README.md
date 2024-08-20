@@ -16,7 +16,7 @@
 ## 环境配置
 
 ```bash
-go get github.com/deaswang/jpush-api-golang
+go get github.com/Krocsky/chaos-jpush-api
 ```
 
 ## 代码样例
