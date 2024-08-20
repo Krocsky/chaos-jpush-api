@@ -98,6 +98,7 @@ type NotificationAndroid struct {
 	Extras     map[string]interface{} `json:"extras,omitempty"`
 	LargeIcon  string                 `json:"large_icon,omitempty"`
 	Intent     map[string]interface{} `json:"intent,omitempty"`
+	ChannelID  string                 `json:"channel_id,omitempty"`
 }
 
 // NotificationIOS define ios notification
@@ -136,12 +137,13 @@ type SmsMessage struct {
 
 // PushOptions define options
 type PushOptions struct {
-	SendNo          int    `json:"sendno,int,omitempty"`
-	TimeToLive      int    `json:"time_to_live,int,omitempty"`
-	OverrideMsgID   int64  `json:"override_msg_id,int64,omitempty"`
-	ApnsProduction  bool   `json:"apns_production"`
-	ApnsCollapseID  string `json:"apns_collapse_id,omitempty"`
-	BigPushDuration int    `json:"big_push_duration,int,omitempty"`
+	SendNo            int                    `json:"sendno,int,omitempty"`
+	TimeToLive        int                    `json:"time_to_live,int,omitempty"`
+	OverrideMsgID     int64                  `json:"override_msg_id,int64,omitempty"`
+	ApnsProduction    bool                   `json:"apns_production"`
+	ApnsCollapseID    string                 `json:"apns_collapse_id,omitempty"`
+	BigPushDuration   int                    `json:"big_push_duration,int,omitempty"`
+	ThirdPartyChannel map[string]interface{} `json:"third_party_channel,omitempty"`
 }
 
 // PushRequest define push request body
