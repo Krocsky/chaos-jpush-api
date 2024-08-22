@@ -99,5 +99,6 @@ type PushOptions struct {
 	ApnsCollapseID    string                 `json:"apns_collapse_id,omitempty"`
 	BigPushDuration   int                    `json:"big_push_duration,int,omitempty"`
 	ThirdPartyChannel map[string]interface{} `json:"third_party_channel,omitempty"`
+	Classification    int                    `json:"classification,int,omitempty"` // 消息类型分类： 0：代表运营消息 1：代表系统消息【优先级最高会覆盖，options.third_party_channel.vivo.classification  third_party_channel 字段设置的值；极光不对指定的消息类型进行判断或校准，会以开发者自行指定的消息类型适配 Android 厂商通道。不填默认为 0】
 }
 ```

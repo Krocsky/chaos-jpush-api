@@ -98,7 +98,7 @@ type NotificationAndroid struct {
 	Extras     map[string]interface{} `json:"extras,omitempty"`
 	LargeIcon  string                 `json:"large_icon,omitempty"`
 	Intent     map[string]interface{} `json:"intent,omitempty"`
-	ChannelID  string                 `json:"channel_id,omitempty"`
+	ChannelID  string                 `json:"channel_id,omitempty"` // 通知栏消息分类 【参考文档：https://docs.jiguang.cn/jpush/server/push/rest_api_v3_push#android】
 }
 
 // NotificationIOS define ios notification
@@ -143,7 +143,8 @@ type PushOptions struct {
 	ApnsProduction    bool                   `json:"apns_production"`
 	ApnsCollapseID    string                 `json:"apns_collapse_id,omitempty"`
 	BigPushDuration   int                    `json:"big_push_duration,int,omitempty"`
-	ThirdPartyChannel map[string]interface{} `json:"third_party_channel,omitempty"`
+	ThirdPartyChannel map[string]interface{} `json:"third_party_channel,omitempty"` // 推送请求下发通道 【仅针对配置了厂商用户使用有效，详情参考：https://docs.jiguang.cn/jpush/server/push/rest_api_v3_push#third_party_channel-%E8%AF%B4%E6%98%8E】
+	Classification    int                    `json:"classification,int,omitempty"`  // 消息类型分类： 0：代表运营消息 1：代表系统消息【优先级最高会覆盖，options.third_party_channel.vivo.classification  third_party_channel 字段设置的值；极光不对指定的消息类型进行判断或校准，会以开发者自行指定的消息类型适配 Android 厂商通道。不填默认为 0】
 }
 
 // PushRequest define push request body
